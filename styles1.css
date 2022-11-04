@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(167, 211, 148);
+}
+p {
+
+    font-size: 1.5rem;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(227, 109, 31);
+}
+
+
+
+#pic2{
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#pic3{
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pic4{
+    width: 495px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#pic1{
+    width: 400px;
+    height: 250px;
+    padding-left: 550px;
+
+}
+
+a {
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.nav {
+    color: rgb(255, 119, 70);
+
+}
+
+.container-fluid{
+    color: coral
+}
