@@ -103,8 +103,8 @@ a {
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
-    font-size: 40px;
+    padding: 2rem;
+    font-size: 3rem;
     text-align: center;
     background: rgb(142, 243, 142);
   }
@@ -133,8 +133,8 @@ a {
   /* Add a card effect for articles */
   .card {
     background-color: rgb(142, 243, 142);
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
   }
   
   /* Clear floats after the columns */
@@ -146,10 +146,10 @@ a {
   
   /* Footer */
   .footer {
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
     background: rgb(142, 243, 142);
-    margin-top: 20px;
+    
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
