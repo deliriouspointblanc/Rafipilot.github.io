@@ -29,7 +29,12 @@ h1 {
 }
 
 
+.topic {
+    text-align: center;
+    color: black;
+    
 
+}
 #pic2{
     width: 500px;
     height: 400px;
@@ -74,4 +79,14 @@ a {
 
 .container-fluid{
     color: coral
+}
+
+.imgcentre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 17rem;
+    width: 20rem;
+    margin-top: 1rem;
+  
 }
