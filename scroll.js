@@ -2,5 +2,6 @@ var offsetStart = 0;
 var offsetEnd = 0;
 
 window.addEventListener('scroll', () => {
-  document.documentElement.style.setProperty('--scroll', ( window.pageYOffset - offsetStart ) / ( document.body.offsetHeight - offsetStart - offsetEnd - window.innerHeight ));
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
+console.log('scroll:' + scroll);
