@@ -76,23 +76,23 @@ h1 {
 
 }
 #pic2{
-    width: 500px;
-    height: 400px;
+    width: 39rem;
+    height: 30rem;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 #pic3{
-    width: 500px;
-    height: 400px;
+    width: 39rem;
+    height: 30rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 #pic4{
-    width: 495px;
-    height: 400px;
+    width: 39rem;
+    height: 30rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -131,15 +131,15 @@ a {
   
 }
 
-* {
+ * {
     box-sizing: border-box;
-  }
+  } 
   
-  body {
+  /* body {
     font-family: Arial;
     padding: 2rem;
     background: rgb(5, 112, 5);
-  }
+  } */
   
   /* Header/Blog Title */
   .header {
@@ -191,11 +191,124 @@ a {
     background: rgb(142, 243, 142);
     
   }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
+
+
+ 
+
+
+  body {
+    padding: 0;
+    margin: 0;
+    min-height: 500vh;
+    background-color: rgb(139, 201, 228);
+    animation: body 1s linear;
+  }
+  @keyframes body {
+    0% {
+      background-color: rgb(139, 201, 228);
+      color: rgb(139, 201, 228);
     }
+    100% {
+      background-color: rgb(19, 48, 97);
+      color: rgb(19, 48, 97);
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    background: currentcolor;
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: currentcolor;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  .progress {
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: progress 1s linear;
+  }
+  @keyframes progress {
+    0% {
+      background-color: #fff;
+      width: 0%;
+    }
+    100% {
+      background-color: rgb(20, 255, 226);
+      width: 100%;
+    }
+  }
+  
+  .cube-wrap {
+    --size: 30vmin;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    perspective: 100vmin;
+  }
+  .cube {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+    animation: cube 1s linear;
+  }
+  @keyframes cube {
+    0% {
+      transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+    }
+  }
+  
+  .side {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background-color: #eee;
+    backface-visibility: visible;
+    top: calc(var(--size) * -.5);
+    left: calc(var(--size) * -.5);
+  }
+  .top {
+    background-color: #fff;
+    transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
+  }
+  .bottom {
+    background-color: #999;
+    transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
+  }
+  .left {
+    background-color: #ccc;
+    transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
+  }
+  .right {
+    background-color: #ddd;
+    transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
+  }
+  .front {
+    background-color: #aaa;
+    transform: translateZ(calc(var(--size) * .5));
+  }
+  .back {
+    background-color: #bbb;
+    transform: translateZ(calc(var(--size) * -.5));
+  }
+  
+  :root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
   }
