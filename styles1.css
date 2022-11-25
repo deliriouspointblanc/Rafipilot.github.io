@@ -4,8 +4,8 @@ body{
 p {
 
     font-size: 1.5rem;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center;
 
 }
@@ -15,13 +15,26 @@ p {
     text-align:center;
 }
 
+.intro {
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: center;
+    color: rgb(232, 84, 30);
+}
+
 h1 {
     text-align: center;
     color: rgb(227, 109, 31);
 }
 
 
+.topic {
+    text-align: center;
+    color: black;
+    
 
+}
 #pic2{
     width: 500px;
     height: 400px;
@@ -67,3 +80,82 @@ a {
 .container-fluid{
     color: coral
 }
+
+.imgcentre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 17rem;
+    width: 20rem;
+    margin-top: 1rem;
+  
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 2rem;
+    background: rgb(5, 112, 5);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    background: rgb(142, 243, 142);
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 2rem;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: rgb(142, 243, 142);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgb(142, 243, 142);
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    background: rgb(142, 243, 142);
+    
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
