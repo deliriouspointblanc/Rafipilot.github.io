@@ -3,6 +3,7 @@
 } */
 
 /* ------ Code from scroll ------ */
+
 body {
   padding: 0;
   margin: 0;
@@ -82,6 +83,12 @@ h1 {
     height: 30rem;
     margin-left: auto;
     margin-right: auto;
+}
+#pic8{
+  width:45rem;
+  height: 35rem;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
