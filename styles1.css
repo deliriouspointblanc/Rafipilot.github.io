@@ -58,6 +58,10 @@ p {
     text-align:center;
 }
 
+.pic102 {
+  text-align:center;
+  
+}
 .intro {
     font-size: 1.5rem;
     padding-left: 5rem;
@@ -78,6 +82,7 @@ h1 {
     
 
 }
+
 #pic2{
     width: 39rem;
     height: 30rem;
